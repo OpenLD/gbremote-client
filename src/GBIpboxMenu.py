@@ -138,7 +138,7 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 		Screen.__init__(self, session)
 		ConfigListScreen.__init__(self, self.list)
 
-		if getImageDistro() in ("openatv"):
+		if getImageDistro() in ("openatv", "openld"):
 			self.setTitle(_('IPBOX Client'))
 		else:
 			self.setTitle(_('GBIpbox Client'))

@@ -42,7 +42,7 @@ class GBIpboxAbout(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 
-		if getImageDistro() in ("openatv"):
+		if getImageDistro() in ("openatv", "openld"):
 			self.setTitle(_('IPBOX Client About'))
 			about = "IPBOX Client 1.0""\n"
 		else:
